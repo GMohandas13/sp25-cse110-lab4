@@ -1,0 +1,3 @@
+1. So the bug in this program was that the values that were being passed in where strings, which meant that when our function went in to add num1 and num2 it was just doing string concatenation and not arithmetic. As a result 10+13 got you the string '1013' instead of the integer 23.
+
+2. So since the main issue is happening when the numbers are being pulled in, we can typecast them to Numbers when they are being pulled in by the getElement. This will now allow the + in the calculateSum function to be an arithmetic operand and we will get 10 + 13 = 23!
